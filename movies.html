@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <title>POPCORN - Movies</title>
+        <link rel="icon" href="Images/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/main.css">
+        <script src="JS/handler.js"></script>	
+	</head>
+	<body>
+		<header id="up">
+			<nav>
+                <a href="home.html">
+                    <img src="Images/logo.png" class="logo" width="30" height="30" alt="Logo">
+                </a>
+                <a class="first" href="home.html">Home</a>
+				<a class="this" href="movies.html">Movies</a>
+            </nav>
+        </header>
+        <br>
+            <aside>
+                <div class="dropdown">
+                    <h2 class="select">FIND YOUR MOVIE</h2><br><br>
+
+                    <div class="btn-group-vertical" style="width: 100%;">
+
+                        <div class="btn-group dropright">
+                            <button type="button" class="btn dropbtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Drama
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#done">Zindagi Na Milego Dobara</a></li>
+                                <li><a href="#dtwo">The Shawshank Redemption</a></li>
+                                <li><a href="#dthree">The Pursuit of Happyness</a></li>
+                                <li><a href="#dfour">The Man who knew Infinity</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="btn-group dropright">
+                            <button type="button" class="btn dropbtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#aone">The Dark Knight</a></li>
+                                <li><a href="#atwo">Avengers: Endgame</a></li>
+                                <li><a href="#athree">Inception</a></li>
+                                <li><a href="#afour">Uri: The Surgical Strike</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="btn-group dropright">
+                            <button type="button" class="btn dropbtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Romance
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#rone" onclick="adult()">Fifty shades of Grey</a></li>
+                                <li><a href="#rtwo">Me before You</a></li>
+                                <li><a href="#rthree">The Fault in our Stars</a></li>
+                                <li><a href="#rfour">Kal Ho Na Ho</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group dropright">
+                            <button type="button" class="btn dropbtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Comedy
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#cone">3 Idiots</a></li>
+                                <li><a href="#ctwo">Ashi hi Banva Banvi</a></li>
+                                <li><a href="#cthree">Dhamaal</a></li>
+                                <li><a href="#cfour">We're the Millers</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </aside>
+        <section class="main">
+            <section>
+
+                <figure>
+                    <p class="prev" onclick="update(-1)">&laquo;</p>
+                    <div class="mySlides initial">
+                        <img src="Images/movie1.jpg" alt="Chrysanthemum">
+                        
+                    </div>
+                    <div class="mySlides">
+                        <img src="Images/movie2.jpg" alt="Desert">
+                       
+                    </div>
+                    <div class="mySlides">
+                        <img src="Images/movie3.jpg" alt="Jellyfish">
+                        
+                    </div>
+                    <div class="mySlides">
+                        <img src="Images/movie4.jpg" alt="Koala">
+                        
+                    </div>
+                    <div class="mySlides">
+                        <img src="Images/movie5.jpg" alt="Tulips">
+                        
+                    </div>
+                    <p class="next" onclick="update(1)">&raquo;</p>
+                    <div class="dot_container">
+                        <span class="dot active" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                      </div>
+                </figure>
+            </section>
+            <section id="done">
+                <br><br><br><br><hr>
+                <h2>Zindagi Na Milegi Dobara</h2>
+                <a href="https://www.youtube.com/watch?v=FJrpcDgC3zU" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/ZNMD.jpg')" class="poster" src="Images/ZNMD.jpg" alt="ZNMD">
+                </a><br><br>
+                <div class="info">
+                    <div>Friends Kabir, Imran and Arjun take a vacation in Spain before Kabir's marriage. The trip turns into an opportunity to mend fences, heal wounds, fall in love with life and combat their worst fears.</div>                
+                    <br><div><strong>Rating: </strong>8.1/10</div>
+                    <div><strong>Duration: </strong>2h 35m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/methode/2021/01/11/d5ed0832-5001-11eb-ad83-255e1243236c_image_hires_113755.jpg?itok=6PsAhoy2&v=1610336282" alt="Hrithik">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_O9ABP5SikLMyVnGV7Jec5K5Kc_NqGuL0Tj5akCrXIID0kMyAy20Cr025vSKj3lLF_E&usqp=CAU" alt="Farhan">
+                    <img class="cast" src="https://pbs.twimg.com/profile_images/502339817749753856/2lDBm4TJ.jpeg" alt="Abhay">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/zoya-akhtar-8899-24-03-2017-14-06-40.jpg?1" alt="Zoya">
+                </div>        
+                <div class="names">
+                    <div>Hrithik Roshan</div><div>Farhan Akhtar</div><div>Abhay Deol</div><div>Director: Zoya Akhtar</div>
+                </div>
+            </section>
+            <section id="dtwo">
+                <br><br><br><br><hr>
+                <h2>The Shawshank Redemption</h2>
+                <a href="https://www.youtube.com/watch?v=6hB3S9bIaco" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Shawshank.jpg')" class="poster" src="Images/Shawshank.jpg" alt="The Shawshank Redemption">
+                </a><br><br>
+                <div class="info">
+                    <div>Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.</div>                
+                    <br><div><strong>Rating: </strong>9.3/10</div>
+                    <div><strong>Duration: </strong>2h 22m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/4b0/6be/e1047cc79ed454fa5580ddd5e3573e573d-21-morgan-freeman.rsquare.w330.jpg" alt="Morgan">
+                    <img class="cast" src="https://c8d8q6i8.stackpathcdn.com/wp-content/uploads/2016/09/Tim-Robbins-Contact-Information.jpg" alt="Tim">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVJufz-9OsE3EJEWkM0pS67dROlAXM_CeMOP7nMaDOxkXXXPHvAjzuscLpAjLO2mSC8Q&usqp=CAU" alt="Bob">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/482/6b6/7be9e65ded2bc3dba7fa221cd5931f28b3-19-frank-darabont.rsquare.w330.jpg" alt="Frank">
+                </div>        
+                <div class="names">
+                    <div>Morgan Freeman</div><div>Tim Robbins</div><div>Bob Gunton</div><div>Director: Frank Darabont</div>
+                </div>
+            </section>
+            <section id="dthree">
+                <br><br><br><br><hr>
+                <h2>The Pursuit of Happyness</h2>
+                <a href="https://www.youtube.com/watch?v=DMOBlEcRuw8" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Pursuit.jpg')" class="poster" src="Images/Pursuit.jpg" alt="The Pursuit of Happyness">
+                </a><br><br>
+                <div class="info">
+                    <div>Chris Gardner takes up an unpaid internship in a brokerage firm after he loses his life's earnings selling a product he invested in. His wife leaves him and he is left with the custody of his son.</div>                
+                    <br><div><strong>Rating: </strong>8/10</div>
+                    <div><strong>Duration: </strong>1h 57m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://media.wired.com/photos/5d960eba01e4a4000826137c/1:1/w_960,h_960,c_limit/Culture_Monitor_WillSmith-465783654.jpg" alt="Will">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1EruJHpZCVVHAlapd4XjGRcfMsTNrQIj2XQMX9RsdkoIL_e_H7PSrAha39JIDTHGnLc&usqp=CAU" alt="Jaden">
+                    <img class="cast" src="https://media.allure.com/photos/5a1f35ff7d0e4e7133caf7e5/1:1/w_354%2Cc_limit/GettyImages-848863918.jpg" alt="Thandie">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOiJcFcuctKPBVAG86jkkBUSVYPP1GhEbEnosGnzSb-Qruzy2xMxUUIvlqmlcmnX5GFE&usqp=CAU" alt="Gabriele">
+                </div>        
+                <div class="names">
+                    <div>Will Smith</div><div>Jaden Smith</div><div>Thandie Newton</div><div>Director: Gabriele Muccino</div>
+                </div>
+            </section>
+            <section id="dfour">
+                <br><br><br><br><hr>
+                <h2>The Man who knew Infinity</h2>
+                <a href="https://www.youtube.com/watch?v=oXGm9Vlfx4w" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Infinity.jpg')" class="poster" src="Images/Infinity.jpg" alt="The Man who knew Infinity">
+                </a><br><br>
+                <div class="info">
+                    <div>When self-taught mathematical genius Srinivasa Ramanujan fails out of college, he does not give up hope. Determined to pursue his passion, he contacts Professor G H Hardy and is invited to attend Trinity College.</div>                
+                    <br><div><strong>Rating: </strong>7.2/10</div>
+                    <div><strong>Duration: </strong>1h 54m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/04/Dev-Pate-throwback-thursday.jpg" alt="Dev">
+                    <img class="cast" src="https://www.aceshowbiz.com/images/photo/jeremy_irons.jpg" alt="Jeremy">
+                    <img class="cast" src="https://pbs.twimg.com/profile_images/1138467677041807363/AAC84A9k_400x400.jpg" alt="Devika">
+                    <img class="cast" src="https://assets.libsyn.com/secure/content/31078628" alt="Matthew">
+                </div>        
+                <div class="names">
+                    <div>Dev Patel</div><div>Jeremy Irons</div><div>Devika Bhise</div><div>Director: Matthew Brown</div>
+                </div>
+            </section>
+            <section id="aone">
+                <br><br><br><br><hr>
+                <h2>The Dark Knight</h2>
+                <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Dark.jpg')" class="poster" src="Images/Dark.jpg" alt="The Dark Knight">
+                </a><br><br>
+                <div class="info">
+                    <div>After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who wants to bring all the heroes down to his level.</div>                
+                    <br><div><strong>Rating: </strong>9/10</div>
+                    <div><strong>Duration: </strong>2h 32m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://media.vanityfair.com/photos/5bb5383ad23564139e45cee7/1:1/w_582,h_582,c_limit/t-Christian-Bale-Transformative-Roles.png" alt="Christian">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfZL_e5Li6V3M01JJLlUwEAonBQ9fDgccAc1K2sDQQJsKGaJz1xzRtdbT9KF43twlwHc&usqp=CAU" alt="Heath">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/4b0/6be/e1047cc79ed454fa5580ddd5e3573e573d-21-morgan-freeman.rsquare.w330.jpg" alt="Morgan">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqs30E-0X-US0Knj3XDVBdGu7h0mJ-2eI1EadNOLNFH7fHBKvRYTdQvTDNk9DplDoprY&usqp=CAU" alt="Christopher">
+                </div>        
+                <div class="names">
+                    <div>Christian Bale</div><div>Heath Ledger</div><div>Morgan Freeman</div><div>Director: Christopher Nolan</div>
+                </div>
+            </section>
+            <section id="atwo">
+                <br><br><br><br><hr>
+                <h2>Avengers: Endgame</h2>
+                <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Endgame.jpg')" class="poster" src="Images/Endgame.jpg" alt="Avengers: Endgame">
+                </a><br><br>
+                <div class="info">
+                    <div>After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</div>                
+                    <br><div><strong>Rating: </strong>8.4/10</div>
+                    <div><strong>Duration: </strong>3h 2m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://i.redd.it/ncemzhi06uz21.jpg" alt="Robert">
+                    <img class="cast" src="https://assets.teenvogue.com/photos/5ab51ebe7644ea61b54a1d8e/1:1/w_1272,h_1272,c_limit/chris-evans-supporting-women-in-the-era-of-metoo.jpg" alt="Evans">
+                    <img class="cast" src="https://media.wired.com/photos/5c6ec75004bf062cbff2b89a/1:1/w_1597,h_1597,c_limit/Culture_Monitor_Hemsworth-861011330.jpg" alt="Hemsworth">
+                    <img class="cast" src="https://bleedingcool.com/wp-content/uploads/2017/07/Russo-Brothers-900x900.jpg" alt="Russo">
+                </div>        
+                <div class="names">
+                    <div>Robert Downey Jr.</div><div>Chris Evans</div><div>Chris Hemsworth</div><div>Director: Russo brothers</div>
+                </div>
+            </section>
+            <section id="athree">
+                <br><br><br><br><hr>
+                <h2>Inception</h2>
+                <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Inception.jpg')" class="poster" src="Images/Inception.jpg" alt="Inception">
+                </a><br><br>
+                <div class="info">
+                    <div>Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform the impossible, an inception.</div>                
+                    <br><div><strong>Rating: </strong>8.8/10</div>
+                    <div><strong>Duration: </strong>2h 28m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://media.vanityfair.com/photos/56268c22d475a5ce0f58f0bf/1:1/w_960,h_960,c_limit/leonardo-dicaprio-oscar.jpg" alt="Leo">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/12/08b85757-ab83-47c5-ac08-51019ee6e615.jpg" alt="Ellen">
+                    <img class="cast" src="https://media1.popsugar-assets.com/files/thumbor/TAZb6Bvj80dykepwAx8tIW5uzy4/0x120:2210x2330/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/12/10/978/n/1922398/a386fbda5df01c4492eca9.11884753_/i/Cillian-Murphy.jpg" alt="Cillian">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqs30E-0X-US0Knj3XDVBdGu7h0mJ-2eI1EadNOLNFH7fHBKvRYTdQvTDNk9DplDoprY&usqp=CAU" alt="Nolan">
+                </div>        
+                <div class="names">
+                    <div>Leonardo Di Caprio</div><div>Ellen Page</div><div>Cillian Murphy</div><div>Director: Christopher Nolan</div>
+                </div>
+            </section>
+            <section id="afour">
+                <br><br><br><br><hr>
+                <h2>Uri: The Surgical Strike</h2>
+                <a href="https://www.youtube.com/watch?v=VVY3do673Zc" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Uri.jpg')" class="poster" src="Images/Uri.jpg" alt="Uri">
+                </a><br><br>
+                <div class="info">
+                    <div>Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.</div>                
+                    <br><div><strong>Rating: </strong>8.3/10</div>
+                    <div><strong>Duration: </strong>2h 18m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://assets.vogue.in/photos/5ee73dad800c753aed1a475e/1:1/w_992,h_992,c_limit/Vicky%20Kaushal%20family%20home%20andheri%20west%20mumbai%20bollywood%20celebrity%20homes.jpg" alt="Vicky">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2021/03/Yami-Gautam-1.png" alt="Yami">
+                    <img class="cast" src="https://bollyspice.com/wp-content/uploads/2017/03/paresh-rawal.jpg" alt="Paresh">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh51f3Fymq8sc7aRRUv6WWs32mBJONUkIoxdPd5bAoAlXPHPtWsSmv6OQ74QSSqlz2weo&usqp=CAU" alt="Aditya">
+                </div>        
+                <div class="names">
+                    <div>Vicky Kaushal</div><div>Yami Gautam</div><div>Paresh Rawal</div><div>Director: Aditya Dhar</div>
+                </div>
+            </section>
+            <section id="rone">
+                <br><br><br><br><hr>
+                <h2>Fifty shades of Grey</h2>
+                <a href="https://www.youtube.com/watch?v=SfZWFDs0LxA" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Fifty.jpg')" class="poster" src="Images/Fifty.jpg" alt="Fifty shades of grey">
+                </a><br><br>
+                <div class="info">
+                    <div>When college senior Anastasia Steele steps in for her sick roommate to interview prominent businessman Christian Grey for their campus paper, little does she realize the path her life will take. Christian, as enigmatic as he is rich and powerful, finds himself strangely drawn to Ana, and she to him. Though sexually inexperienced, Ana plunges headlong into an affair -- and learns that Christian's true sexual proclivities push the boundaries of pain and pleasure.</div>                
+                    <br><div><strong>Rating: </strong>4.1/10</div>
+                    <div><strong>Duration: </strong>2h 9m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/577/7e0/09331299169ffe92b438792d8e2fff9cf8-19-dakota-johnson-2.rsquare.w330.jpg" alt="Dakota">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/5f2/dd9/6d07a5441d5d4ca134309efa86150c3ed8-05-jamie-dornan.rsquare.w700.jpg" alt="Jamie">
+                    <img class="cast" src="https://lh3.googleusercontent.com/proxy/8imD-EMm4HCzbVgkVLlk6IwRG5D0jMYHNqXGQuvvhrZ_Ft91hWDZhsuMFplS68b9neCk3Gyusq3MEOs9muS3rvKuxu7UNS1CC9Voqnfa4tLyIgJOKLjlbhkIFqzIe3HliX99rAOd-X_sI_5jQ5c" alt="Luke">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjdIKuW_uRop3y74h0bqxdWHmfWZ2jZylpymWYeoL2ajhmMIyTTbJ0q0l6jodpzY9eA0&usqp=CAU" alt="Sam TJ">
+                </div>        
+                <div class="names">
+                    <div>Dakota Johnson</div><div>Jamie Dornan</div><div>Luke Grimes</div><div>Director: Sam Taylor-Johnson</div>
+                </div>
+            </section>
+            <section id="rtwo">
+                <br><br><br><br><hr>
+                <h2>Me before You</h2>
+                <a href="https://www.youtube.com/watch?v=Eh993__rOxA" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/meb4u.jpg')" class="poster" src="Images/meb4u.jpg" alt="Me before You">
+                </a><br><br>
+                <div class="info">
+                    <div>After losing her job, Louisa Clark is forced to accept one which requires her to take care of Will Traynor, a recently-paralyzed man. The two of them soon bond with each other.</div>                
+                    <br><div><strong>Rating: </strong>7.4/10</div>
+                    <div><strong>Duration: </strong>1h 51m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://media.glamour.com/photos/5b8ec8bf6897de2d2ff9f1d0/1:1/w_1392,h_1392,c_limit/GettyImages-958751220.jpg" alt="Emilia">
+                    <img class="cast" src="https://m.belfasttelegraph.co.uk/migration_catalog/d793e/25866035.ece/AUTOCROP/w620/Films%2010-1.jpg" alt="Sam">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3fLZ8qnk04Y0gSShNLbkXLQJhHwuAPaAedF7tvtRM7isrelz4j2jUwgDNaRbNrGl3Kdw&usqp=CAU" alt="Lewis">
+                    <img class="cast" src="https://m.media-amazon.com/images/M/MV5BOTM2MTQ5NTQ3MF5BMl5BanBnXkFtZTgwNjgyNDEwOTE@._V1_UX180_CR0,0,180,180_AL_.jpg" alt="Thea">
+                </div>        
+                <div class="names">
+                    <div>Emilia Clarke</div><div>Sam Claflin</div><div>Matthew Lewis</div><div>Director: Thea Sharrock</div>
+                </div>
+            </section>
+            <section id="rthree">
+                <br><br><br><br><hr>
+                <h2>The Fault in our Stars</h2>
+                <a href="https://www.youtube.com/watch?v=9ItBvH5J6ss" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/fault.jpg')" class="poster" src="Images/fault.jpg" alt="The Fault in our Stars">
+                </a><br><br>
+                <div class="info">
+                    <div>Two cancer-afflicted teenagers Hazel and Augustus meet at a cancer support group. The two of them embark on a journey to visit a reclusive author in Amsterdam.</div>                
+                    <br><div><strong>Rating: </strong>7.1/10</div>
+                    <div><strong>Duration: </strong>2h 13m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kP1uO-3zBA8S4FngM5z8v_WGanQ6KKTWr40lJTiFY-O9vi8ig4GF2UdnXYnrlkFZVHU&usqp=CAU" alt="Shailene">
+                    <img class="cast" src="https://media.vanityfair.com/photos/5ef0e1539d368940b137b362/1:1/w_3682,h_3682,c_limit/GettyImages-1177833525.jpg" alt="Ansel">
+                    <img class="cast" src="https://media1.popsugar-assets.com/files/thumbor/cxEAxXsE3sawMqaedJyQATDSRSM/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2015/03/19/929/n/1922398/f3469d18_edit_img_image_88_1419751428_NatW/i/Nat-Wolff.jpg" alt="Nat">
+                    <img class="cast" src="https://bookingagentinfo.com/wp-content/uploads/2020/07/Josh-Boone-Contact-Information.jpg" alt="Josh">
+                </div>        
+                <div class="names">
+                    <div>Shailene Woodley</div><div>Ansel Elgort</div><div>Nat Wolff</div><div>Director: Josh Boone</div>
+                </div>
+            </section>
+            <section id="rfour">
+                <br><br><br><br><hr>
+                <h2>Kal Ho Na Ho</h2>
+                <a href="https://www.youtube.com/watch?v=tVMAQAsjsOU" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/khnh.jpg')" class="poster" src="Images/khnh.jpg" alt="Kal Ho Na Ho">
+                </a><br><br>
+                <div class="info">
+                    <div>Naina, a girl living a dreary life, finds a new meaning to her life when she meets Aman. Even though she loves him, Aman claims to be a married man and convinces Rohit, her friend, to woo her.</div>                
+                    <br><div><strong>Rating: </strong>8/10</div>
+                    <div><strong>Duration: </strong>3h 8m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2016/03/681135.jpg" alt="SRK">
+                    <img class="cast" src="https://pbs.twimg.com/profile_images/917631983370461184/bXQjpkDe_400x400.jpg" alt="Preity">
+                    <img class="cast" src="https://gumlet.assettype.com/nationalherald/2020-05/a25f1adc-92e1-4e68-ad63-3b72cdf60dc5/259887_saif_ali_khan.jpg?w=1200&h=1200" alt="Saif">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/nikkhil-advani-1599-24-03-2017-12-39-34.jpg?1" alt="Nikkhil">
+                </div>        
+                <div class="names">
+                    <div>Shah Rukh Khan</div><div>Preity Zinta</div><div>Saif Ali Khan</div><div>Director: Nikkhil Advani</div>
+                </div>
+            </section>
+            <section id="cone">
+                <br><br><br><br><hr>
+                <h2>3 Idiots</h2>
+                <a href="https://www.youtube.com/watch?v=K0eDlFX9GMc" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/3idiots.jpg')" class="poster" src="Images/3idiots.jpg" alt="3 Idiots">
+                </a><br><br>
+                <div class="info">
+                    <div>In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.</div>                
+                    <br><div><strong>Rating: </strong>8.4/10</div>
+                    <div><strong>Duration: </strong>2h 50m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://pbs.twimg.com/media/EWcrdiXXYAEm_NJ.jpg" alt="Aamir">
+                    <img class="cast" src="https://pbs.twimg.com/profile_images/1368068029142102016/Jzjo0gmy.jpg" alt="Madhavan">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2021/01/Sharman-Joshi2.jpg" alt="Sharman">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rajkumar_hirani_1800_19-08-2016_11-29-36.jpg" alt="Hirani">
+                </div>        
+                <div class="names">
+                    <div>Aamir Khan</div><div>R Madhavan</div><div>Sharman Joshi</div><div>Director: Rajkummar Hirani</div>
+                </div>
+            </section>
+            <section id="ctwo">
+                <br><br><br><br><hr>
+                <h2>Ashi hi Banva Banvi</h2>
+                <a href="https://www.youtube.com/watch?v=scmrzS5qsoQ" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Ashi.jpg')" class="poster" src="Images/Ashi.jpg" alt="Ashi hi Banva Banvi">
+                </a><br><br>
+                <div class="info">
+                    <div>Dhananjay and his brother force two of their friends to pose as their wives as the landlady allows only married couples as tenants. They face issues while hiding their identities from the lady.</div>                
+                    <br><div><strong>Rating: </strong>8.8/10</div>
+                    <div><strong>Duration: </strong>2h 16m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ashok-saraf-246-24-03-2017-12-31-06.jpg" alt="Ashok">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/sachin-pilgaonkar-5168-18-10-2019-12-18-57.jpg?1" alt="Sachin">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/laxmikant-berde-4954-20-09-2017-01-04-59.jpg?1" alt="Laksh">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/sachin-pilgaonkar-5168-18-10-2019-12-18-57.jpg?1" alt="Sachin">
+                </div>        
+                <div class="names">
+                    <div>Ashok Saraf</div><div>Sachin Pilgaonkar</div><div>Lakshmikant Berde</div><div>Director: Sachin Pilgaonkar</div>
+                </div>
+            </section>
+            <section id="cthree">
+                <br><br><br><br><hr>
+                <h2>Dhamaal</h2>
+                <a href="https://www.youtube.com/watch?v=2VaA6wiu5P8" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Dhamaal.jpg')" class="poster" src="Images/Dhamaal.jpg" alt="Dhamaal">
+                </a><br><br>
+                <div class="info">
+                    <div>Roy, Manav, Aditya and Boman, four lazy friends, embark on a race to find a hidden treasure in Goa, unaware that their plans will soon be foiled by Inspector Kabir.</div>                
+                    <br><div><strong>Rating: </strong>7.3/10</div>
+                    <div><strong>Duration: </strong>2h 17m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/07/234c9784-d450-4174-afd9-6d3644ac4a7f.jpg" alt="Arshad">
+                    <img class="cast" src="data:image/webp;base64,UklGRowdAABXRUJQVlA4IIAdAAAwqgCdASrhAOEAPtFWokyoJKMiLfcM+QAaCWNui4guQN0NX5AfAjplyEWLS0MjOXhQrXVn9Zeycyv/O8cO2fQW5+8//qO593qY/Y71F+bF/xf1V9/H+D9ID/Vdd90MX/j9LP2u7xz1v/o3vh7XF5P4LwS/s/cC7U/43vVemxAz8rFyv4fVo+xGRz1/0X+sz/4eXX+A/83Tv///30elumpXT0XGTvEF1Guw5WOoSxc/G8Z/WL4T5AZ88Hq7qKaIvA8j2FBbE4DRNPaNPWNtvqHYo69Lgp8vGmEb0CDQpL8+X4b+ClGeP3yiIKn38b7uNLeS+76a7wbAPm2iFEx0nYBHyiR5Oex0QW+GkfCxl/v1ZAyb3e7IPqMpZ2gTGqqXGhrKufKoKZK1qYLQkPshO2BJnJC9R7PME4wf48l1ZZZQTPY7ED0j6gn86IIOA68HY3+b61h8RsLLGTQSnH+hmfQcXXyTcc3nUq51bxpEIHOZbAw/dHCrNfaSWtVFrJeuFImfOnBIZnjUjivXzMI78iDxD/U+lPvsJkqHfZz9SLzBjkq+Bh4WX6drrCuBgyM0QXwT3al8zlqQXeoS0ZM7S5LjgLZG/9p6fVLdSiKi0EEZ2x27HL5jkf6gfdA+qa1wnCvBqSWfUA8aFUEL44O++IN+2YdSTrTypqbOwJq1C/qG//acuVx0eCCRNbAw+PWa1eTO7chFRLSDHgPtpeayEp1DzXxemOm5y9YoHSEOIqFP3oop9ofs6tKK3HHS+5ecEaTXLU4EE5PDyweCrdF7o0f4e2+d+1qQ5XJs1J//ypCFq0KY1zuJSoSJQTonfMaOsFe9X8UqaMpEOzuOzlspWIN//kQOC+NnODgJ4JKR7MORUfe6WUbvtDO0ZDrFlc9fg97z2/PpKZq/yH56Fv9Px0gkxmhklUPC719Y1vfvvEO23/zBSeJH3/4Nh7cCLOFHBeM5cowiVzkhbgpl5H54bOGjAWkuUH/+1NNVUuXgpiehmUBDg+Hr2c6Ly+ezr0IjwcYtUtiBOiGBSrIgeFzSudQ1gF+rhd7Y4e0JhbvEaaoQt55e2TEg8HMu6Y6cUHFH9K/Z2fqUlP1xYDfwXUJ7LNMLWmwrT8va8e/9w97Dy+DkTlqWHwR18dyKAuFL5ARAUUpQ73IPGs4+pBz+88U3/G2vF6FkG6C78+h9bpPTH/+w0IB9B0pzcMl8KLUWBw+7prdmzjzqEbAuNjq0b0UskeXXiLpKLwnJjV8Z92hvNLrRkCsSiu2x2PUnUf5mOV5Ta8JnrFPsKChBOX9N7Ki5SufSYj3uuZWzCp8BqJ7mPIBNVdYs/Jl9/t8IrGTO5V8h9oXUb5ma2m02Qqv6IE5Ya0hKIaX/u3GZQl+9U584HlTmf0aN+YrmBUbOB8FQ7FvmfpDUg5tMV/YB/DP7Qi7vK+chnlELf9YLuciBXFZfei/VvaJBD90nOSYUTjH91ewGW+lH/zbSNvinM7rdYWG64NXGfhKlnE75KUDSS7sh2AlXJE+O0SkN+xEt9FjABuY0ldSgpO4unQxMXs9ztQb+Xy08uWWo6xkRDRCvbbaLM/2+sboGMv1Hn75GxHP0qlr/fO1iwRc/iJ+nwbcuPXYamB59RbGBE3zgldvDu4wY8A7lxNN/85wZQKRy5p5mNsl03pESM/sdgcn81gqO/PCmryt0kQqUmo+ZaOlN+2WZetNlyQs+qee1E0p5NWqblJFvelKXLAcuYUdo+AuqIaUpa9hZAIzpqUEZOjw5GQQaudR9Xo+xD2vYwt+vlau7RN4OzbWpUMY4HRTWJfsxU1lOLCeqM8SQ3e1iz8gL+AD+9WYN9UaUqD+B0ngXXTaYk88bB5zPl9Ef7wnTbVjKk+lg+g/anQHt5+pJanw9EHABd8BTRUTuje1CvYVtE+WKuvVgiSIiXKCtEsI8cU8//KvCWfqsXVC1dAmwlnQ6Qtl2bP4fsPLiozjB0ckuEQi6oq8vyqTaA6Jkvp3ZeejVEFPm+UYhvukLXuvMqSCusCUJukeewrLnJdjrookuBLoQeL+engcZ+HIBbgSuKcdYLRDiMhMpv4M25h6ElKVXiamW2yaGcaBYFyKO190RVCPIy9uRy915IbOm8seas4gzrjS/QbPuxDtTC4eujj79p02661l1T4BA8tDVNTx/0raDNGtb3q2MFnqVEWtx9RWElNfEyBSrSdDvAjLTp/bn2lZDcB8hns3wbL11Rhigaj3SUVpO3K64G+sIlfFOBBqJmcjqb+CSfGT+RrzwhDg9HZdJ3uJ2Y2n70XoH0s+G371e4UKAGrze0Lslv0aggIx+XbtAPnhSdrdQh4/tHGticy2F1S0ZQmcPfo1i2OId6qo08sOsZ0JrZmAG2fihwvFQ5HNQFIYAAV9YIb31kHlEQRXlLTClHZmOTceM0pkkbSAz3MHiWoNYLPIuSbWPkbFRFznUOigYNkjrAFboLtnsG3zfxxCSatN2oShHoYPUBMiEEhJVTUnA+hsXlSqNzi55QdhQk4BEniZa4BX+1lsufDpMUQviWml3egp4cB6nI0ApcSQtLBf04Etx8h2UYCVrUCFuJfL7ChuGWijFBHkH/v7iLq7Igc206X2tvm+TByL4QKfXUG/G2fqIoBOFcd5JGeJBBcshm4uUsBGjIe6TIxAQswZ81CgqoJZ+P4GrJt3DV76RudSbs5hSEBCqmXgE5IKmeQiwcaVxKaWYzau7Diq/WsrMT6FRDV5iDJUY6sGPDmhYfzbJDTEwuCFZtyW0g7RjYuR5SZFVggfZ0oE1SLiaui8yvqTmlv4xE8SQOw87Im6kckPy9xxecDWjDOpNBX25F6rCN5Le7Z6NY/J2nJYK40+llzWVoeO8wrI4++eO3VAFzLs0Uo6extuof70AuMZzde+oM7Ay1hAZdJBrvxm5kX0bw/wSeDhhAQIKP0ty+CQO2o494BzwgJM8lU08w9kLy54zKheTlj7HeHYvd8PQgcqshqG+w83t1TjhI+JWVY1gAHrQDyUPFb7hiOP2+jrQBH4yRveYKjV2wabM9mkOVQZyzgrfa9G+90R40wyIEaaxp7narweUg7r5q+ozpUudIGP2otJnINlI+O153gSDZkkTm2ugS0EfxCWkjNGP1XQy42LvvMygFl//8QcKvRtpXyBk6Nr1znWWwF0kifPQ1sfpOxgHpfl51aXNCg8SJGMWwkK1Fv2Wlj92f3gJQyass5UxB6+aW4JU6nVl7tPu8u+M+aV32QTNU2Aa3UMDdPwX1oRb1eHfU8WrLcv1reLwJFBf7vQ+iSm+XPlMbnckaItL+TerpZzAuMx0EhiWZl/l3Q+rJTenNOWF0sUn+KuzMW3hE3Irg/Pg4Cn/+4XnU+EKbvlK7msBAliIpLlpe9YoTISr+Y2mA5uaPVFxBqoFaK+nWfyqtBhlHmJhvZVP3QAyAfVYpILxqQdqZDPOGhParCdRM5ewiMyjfRr9cS+ODQOR22wUN3Erb94GYBSEno72sIeNMZlhlTAUsN8+UTmY7p+Ngc1M3OAf9htgVbdoB+tL7/N/9kghSUeddG+DAwKh1bFLlSI2PlSky9MNGY/Jj8GT7xZVe+7i4kzydbjkxzI0e8uTYAEoQ8Qoslz9i5ZG8D27XM2rErybJCgScEft/UxNep+48HrDvVeUdIsZRcdvz2ls02EIW7E4nG0hCmATqQK+ljrklLUXbWqdaYTl2UtxZ18DnoexUJA/9AlFzoEZ9o1Q7HNYLrFaEIkbS9Q3genJPbXc6W5jIf0VUJFx+gA4S5KSp/0c/nBh/0gSGVtcNdbra9E2qPfUOE18VFosUE/FfRPZ7kaCw4OO751abynuCIFdxzT2G8WxD5Zk2Q4sGGUlONUJmhmgdPRpGkDAHLUm/fCXURktW2Blc8M+5JyLAx7SX1ObK6OaCde8+CEfrYtbUHvzlxOqfmX9rqde3QM4bceDsJ0f9jtZesRcm6n1MKsN3Z36K432XHgFp6vcfom1efeyJHhWTuOdnSNhkUkPQHIcdhB7ge7zoJzc3QtzIp7YJCL5MbqH+I0zu0eAU+u2mkxmnV586iJmEmXPc/lIuJSPBHR0lJbaxniEopMy9GVHe/qUrHOiBW/Bi/zi3mb7IHwA5Y16jqPl0ARqmWlwx7b9/Ft589L/uCTwCxmcTs0oYSsQ2BOyIePl81+uR63IpV9AwxTNNFQ8VQz73wLI/vJ7NYpWTKT13LzOehjgnFMcpEYT6/tnuFXMXQYaaL2QhnRVyWejskLqAIhMd4i6iQXvShJ/TX9tk8RVCcQInd2LWoiRFY/OLRJ34pFQPrY5Vs4/KpwMIMLqnqDmD33kC8cCVc6i76RUjW8GMCTx7IhdmaKtZPpmuBB4jZ9YgM6qyfb3+heP8BmB4yXXcY6/xkEogTVvtEO5eZVuBA3B8U8JUDaEXp+XTla5VYc9GZou/HXvl4xws2yG17SyWvdjSXx++VzwEmcx3B4jgKuDgE/xbaxrqOnj1HM0ML4Y6JJRNDFaFkTlKMXP2SzHmEkQOd/iREvCVXfQJ+RTWnPq13t/lXMNQ3m8sgPqKHSVNeKrTBg6F72aRWNuej80ry3B0Y9PcfsluChKeLY3J3a3wOxs49o9YN7uV18SOy7REh3yZsjbK0FkF6g/rkdul29uwz9rj183PArdflHpayc/48qihsaT3yzRggkNHNFBdb55UJoQHGiYTkdzxsXGCKjl86VWnNVnCUcnOQxmc3kJwvlHnLWXHE8hINXb3P3QomPh17XmJtXHuQS4Js1jaY/NaDFb8pWl3/SiEkOxCTfaKAYe061EQqXHV+uUl2BwaI9LgWMmBFhg1zZkpp9iNqb9BilTrO8KjIv8IuWmozuC7r/wcaZr4crm/4evdsvAAaEygmiYbGow3dEpHSfqROYbO/JUp8jxgcna9MPhtMsD04VTz6fZc9z3FgwQE/S71h4aE3OEAe/v7hQ+o5qhJQI1X0KFSzUq1N1BliT87BSFrd2YZVideuh4wiSUK0fJX+dDOjdU47VKWCZrpsz9FN+B6wc/ikBmw196gcgSuB4kfAcS03W/AgHpAgHWnkdyZ6u5ttr8THql5gXooKI8lskX9gVE3f5Fg/2CucwD19Y1IdpU68Q3iSyPcq9jh+5mTNyuBfpBLbhhvT6RoXEJD+uG5sj7PrST2qh6tjhdPyKNuFx8sFhDuA30JF7gGfnBnV45cH+Vos45kQK2E6fQFh6BZlQO6/8y4rb0I5nab7fBNuublPwNrFp5ExYtOII8nOKoxQN4UkqMZ+NHeruC3WCDi7Ci1ftl88+ZKjzHQMoSul3B3+btQ/EblS9IAFODsVwi40dpLnZ7/BI83pIduFCrMcLlc67SfEDif6sVgeRx2MrJnBhiotxoFMKguiUxs+9LFXkeMjyboTL9V0lbLcOrINdLkmPUpYUbkjZ923tAZufsKzRQyWsrZ722ueIzhvNG6+HA5Nm0D8OFoZ2r6xQNzXx6XgyRU8iQn7EZQ1UaancAuIiOI9yoj9H97wg9UPf2Cj8atwfwhNsME1+z9c+CS5aYZnsgQEqaC8HYwDp/lw8BG6bnVvma3JZ27fKjjUXjL7YlkSWQxWUmnoopxO2GMT4R4U+ZDR9y1kNzJCAC1XE3RVEyI11aXKEBTyCuKrr7s2/9x6+5OPa4r72sGnhcGWXwPgEWR5GsF+t/LoUxBEGiqihx6z7QO289l3nHyyKACOpai74kq8iTcGV0Fdnk85x8BUZZRQd4tcXySp9nKxsRfivsIhX0QEMN+zzcoJdV23ytoXVhad+uHZ7acVq785jVHHf0k3ypwKTFmxWgvXZ9zE93BJNVmLHqLtUx5VK2ibM14hIhZwy8ar7oEPoTcmer6OdPH0pTBnNE+GcgIWRYzON6a7UbMEerFxoZjdQiECnuX6F/lc1aNbGiVa9czO5F34Y2wNiiEoUfF4ZXxCwOZFntxwPuEFmHCzJGTorX5in3/7ShNX+C+aT2Oc01uX52uAOGCkdfG4tKjRczCvn+K4fYHQVwE/nPljSWUxdatqKVmALEop8p1OWXKAoJ5lVozNSyyZaEBX9CL8BTYPEkYDamofI5Hw/BxzkK6fQCW8cIOStk1gKdIuEcZrvcOtWNAXgRFIH4Yd6A7M5phFP9XnFk/cVimzyxEwCfJRWncQvW1/gQGPdP0LMklz4ifpyizmUpu3mNYMqmNTbnVzcvh79+11e/U2C8dLQCmRY9nxRzzsu0ac23WR+YfO3TeyR1OnqHlYk8MRchGAWSalODfbZg1gblH+333cTZaNakausTA4jPjsPvV8ktJEMoe93Rm4m1AWMgaE3ylB2/LMPVH1H4F/VesdOfiEOu8a4sT5MptNF4iBROozEDQApmM6pkr2e9kh9Yo9kX+oC7otxBBwfTneK2q3QdwkjVaZDc6Ktphi/41ad1KBBUZpDOyl7IH8bWPphZ6gNd/iq+QuTH/PJnHHmdEHvif8+KbfsS6DVMkAEiSNhnQhNuZftYONog7xwKqsPaH6+dUNSmT7UFtznh3z8NKkJgN98Z7JxTZMdzQ3QFCIEXbteFTZguVz0awwzvWRlEksa+xbyPRCXbIm3I/7gaLohu35Qq0n5+HT2ZWvjYgW9jrlMQMR9UHuIuwFIpbapGYMEhlURNQWsOAXNNA59c7cpIsk7ecnlX9FXjVbSDuOqmabOtf+u71gPoL/Iy1REoXRk30emW8fszmQAmZCVlF1JQQBORll45BwXrGE3qHIeeIrAGtdto7ZhsRsDWOQoIUMcCrb3FWnW4o+Lhu63CHhiOPhXjRAY4Q3k7UULneVK0AAI7reaU5m1IIa4G1OUMEACPPhcjXSNDlVZuAEeq3cfG+fKJkWHFftuq6p0QD0n+YBVUz1B0NSa7bNH0QlCY2NLoNubt8vQHmDscBrfFePDSnfecMsCS1GYI6ZbbnQ+1v7C4/ei1LxpneOoxMytzwGXN7PCDQFidAhst7bnE4CVUUWaLOOTrT/7cfgHq1fIeQekAJas/7jCI4sciDn/oDG9sAUg6VuB9ZzWJWD07+aztGjM8M9jGguFKsQR3B3CMaWEFzguN26HuZFTNFBlfqknZPgBYW9xbWlIYrrEeT/WaTcPQ5TMTfzlwtJLn1b3qXcZ8+HZDqnowHKZaD9sOFHgegAVvbGWlBd9wnafv1id8fC0POUp26n+Lk4qxuzY+Wrf0ggrzkoxsS0Tje/K6Yp7c3ofGXIlvaAJZKaTBqslrsAgKdqMWhkhlNwJEgmnPG9e2mWV6lXtZIIQ/Quvb6ZxQYdXkaup5fD1cDfbNUACrJqJemM9Ip/+qlJukN5V5rM2N8e/nSPvx338KOBHDxbe1qSxTnaJhasOHvUZjYyqaXDKD/1Qf28JpYCUz2YpNJHZvXfFRuPcVfVBeBXW4aXrXZTaHF4synA1bnPurmXY69WvF2nJnveoZFUV9cJjs4yiqYaAwqg8v6KnFE5S1D9HWl/r8uw7s20wCZwT8lL8ejVX9OrlicaucBrcqD1LHqy1PsK2ExcDRi3bnXzgIfxK0Ooego8nQX9/XW3Nb2CIPBTRA44J+ER1sxMEt0f3H2EjaO+ZqwTHqFtKrdxWJaEeKYp76VTn1Kf+HJkS+DRRVyZXJLmuoxM1eqsPbDZx6oWew1JjA6fS/lvvCEEVMIsMuEWg1uOR3NGAFlH9ZxmSXj/nGaJ6fnuQ3bwL9kWkCIWxwhH7UCBasoNHGFw/SS2tfYMulVdcBr+2g8bw3yDu5J5Bwa5ravYza+OwAIIZx3GVPN2QxGGoqrD3nKSxcyX9Qsq4WiGwzT7NFyZLhgy9HECcdOfQYYuiCJei2PbQFdRL//j+nP5Zb/43GNghyuEPxaJa8u2IgLZGockpJIj/8/jVyANwKTJX6WwRSiOb10VPfFOl7KYOuLOi6MaA5JhQ6dVFawV9vaJAOjQHVHTuDwD/Hd8K45Xkh4thwVkGKRagSYoJPnRuC6YTEfa7xUWZN/O2kgdG+4Vs3CaIAaANMMJWJx7n2r3SR4iL+cfQiRA31L5Z2e7klz6MRkoWLGP2WAjmZwDWlU9DilqRVfm3nrHORe6tj2MIBCU7+7C7ziORwmjS3KgYwX1nwhuXkQPWEhJ97iRCZYtz5d+0N7j8cKJK9P5bLuCNPRxGFoxwB1ZoFyYAqI+uahU4pMY61YsomTmk73bZMCwdVI42gtizeB4aA9G2d81EsK59QwEqk7VBs7hlSd4SIhi+dVXYlmtjvM1x8pwMpe89P4+62IRk1suxVj4PMFVkNCFGxTK00p8gKyJn88bug884MEo5xYJf1D0svZOrE+1PJIfKTDUKafFttXrS8V+wNBzVXrw2zKgb2SDSbh2NXARaAX8yTKmzeo/u00PzbZaJ2J9sxiLWBnezMGgfPvRuTL/Ia8Deos9iaYmX5biuB9MsKafXaX1r8x3AfZlhwh2hZIiLVrse0Kz62CeimhCxT8OyCCQiZWLghmeLyn3Tu05cjdWEg2sfWhFVPJSAfcdr6QEt6uBmcA24j5FJhjfmYbC/wy+FZL/s9bpBh6UUcCOBSJ/pwtWh8L4/3JSD2WWZhyJpa2J70+BlAz2BrIlUIMOhjPqwMCitNbIcxM47Ipx87+qFPFfdZ5nQW/M9Qx6YHM1uM3r7tBb/R+QaYeMZ1IQtX0idQ17jeO4EednR1RrLxgMoYGLkkOOrMW2eCpvaAEegWpiMzKanOme0RWmuJTN/aY8DXa/RA+c3NQaE4f2DKpkgE9u3MeUiqOTb4tw2ruyNZo7ntRV0fFZlhnUZklhY5K/1nVq8VEhiJVoVH3mocOzgtO3t5aN/+LzGUyaBA0IXFYBtUKxFUVMd5xtsebMCfRmHt55ku87/i2KKxFByPK28/rZ/dFXzCymNSMstHvp2JurItesLQJuFwl9wwwCkjndbqfKM3kWdGOcOpb3CHnzZ3N9ecr8x7Qn630A1cRhQOlYuPEjyJH+xHj8lCQWShKvM1duljGnf34C11lRAEBBJgr7K/BieZ8Z9mT2GV4hTBqV8TXI/g9LFfEmQOSZixTPgiHnG9pPJFzlqb+aUA7AC8XVoFdyC7HypAgZX895e1XrrHYCcDlq//VUX4rOO7d+iViXaQCKVgrvlnNDw1dHS0+G5WTGVCEDEYUzY/cQKQUEtUS0WUPeoXaAPUBma1jFt60THpG/ULZPX9ElLzL2AJTTcInkmxWv4UAi+9ZiG7fSgtoyTw0qz9QLszAgWUnKaov2vJ+NrTpNQqtNYkKdQdtkI4Jt9B+RgUknOK6R10BkX2eMBsWKzLFvtpn79OL4eSK4STncqQIbLnZzawT63yeUT67LQGE1XOmevIWyXRJVc6FPxvDe9MyHpg6W5QIgDBglThgnoj/JLQkK0/gdAPMTTXjbmDMqUdso2dJr1ivbAs6VsIvWnK7ASA8CoF5xVjKzlnAh3rfmknkqTK5s5s6HcqbeTEKs1xyFuFcMJhfOCkaOpB4AN/UfIj2BuAt2VBZ3zcEhdolgPbEskKNNulYyRTn4IiIZQPGH+0zsM7vhmfck2KORJ/883ruICjmFR+/jtZd6KdbnQ00JuyUTr+o8Q+mdhH3ihm3b7KPPiAmJRh+Sv89vOG04mKtFhm4tlQQbW2ev1iWaKZeA3dT8uvyHGbv8Y+XSwDjffR6HiCtNjxa8Z34nXGEcUuydeMKIkR6Tn0rednk4WQRta1TOaMtQejVl7+1cC8upsC1frC9/QXjAwFoqlKFiGrgE4K/vyXPvRw+sG12ZM3tLJyTinHIFL8BT4rDWWQCw15zcdMLNJw035GWRjPdQjid90fK+8RisMVhhzzHmw85Yvf+q34sJWxoQIuC5qlwdFB7ZEASFyIRbr25KXvhBiWuXAUDkKvC0wcgSigOzmB3Ba9aY8WxtYCHOLAl8n8kHl0j/SVBu69XhxSSot6vx/CPBWQwMAZ+bgu34ihX2xrHumhEVUnHCROQv2k1EhnpNipybjpBmH56gVii3rrK+6UWQQ1vxEsYjAadZ4toQ7k6FZV5oez5VXYWd7X3FXoogUL99KPPRO7qKgA" alt="Riteish">
+                    <img class="cast" src="https://cdn.images.express.co.uk/img/dynamic/79/590x/399889_1.jpg" alt="Sanjay">
+                    <img class="cast" src="https://pbs.twimg.com/profile_images/950084238564405248/1Fi9_pUR_400x400.jpg" alt="Indra">
+                </div>        
+                <div class="names">
+                    <div>Arshad Warsi</div><div>Riteish Deshmukh</div><div>Sanjay Dutt</div><div>Director: Indra Kumar</div>
+                </div>
+            </section>
+            <section id="cfour">
+                <br><br><br><br><hr>
+                <h2>We're the Millers</h2>
+                <a href="https://www.youtube.com/watch?v=0Vsy5KzsieQ" target="_blank">
+                    <img onmouseover="display(this)" onmouseout="remove(this,'Images/Millers.jpg')" class="poster" src="Images/Millers.jpg" alt="We're the Millers">
+                </a><br><br>
+                <div class="info">
+                    <div>David, a drug dealer, is forced by his boss to smuggle drugs from Mexico. He hires a stripper, a petty thief and a teenage neighbour and forms a fake family to help him smuggle the drugs.</div>                
+                    <br><div><strong>Rating: </strong>7/10</div>
+                    <div><strong>Duration: </strong>1h 58m</div>
+                </div>
+                <br>
+                <div class="pics">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD93Gx1wJaxFZr62RNyoCIHFF2DEFgysosse_ZfI5U1X39oXROJFz3ra-XR3Yw0hQbpk&usqp=CAU" alt="Jenny">
+                    <img class="cast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IfAnlCWVhQsOfJGIpHV6mq8_MvCzXbxcI2_5NyKJOklGz7cpu2l3v9VtYYteRGoJ-hQ&usqp=CAU" alt="Jason">
+                    <img class="cast" src="https://pyxis.nymag.com/v1/imgs/c9d/d9f/d1bc85f1f31f303f7e2c55abc95b0224a2-emma-roberts.rsquare.w700.jpg" alt="Emma">
+                    <img class="cast" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rawson-marshall-thurber-37516-24-03-2017-17-39-59.jpg" alt="Rawson">
+                </div>        
+                <div class="names">
+                    <div>Jennifer Aninston</div><div>Jason Sudeikis</div><div>Emma Roberts</div><div>Director: Rawson Thurber</div>
+                </div><br><br><br><br><hr>
+            </section>
+    </section>
+    <footer>
+        <a href="#up" class="scroll" style="text-decoration: none;">^</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
